@@ -1,0 +1,11 @@
+message: Join Message
+blocks:
+  - NETHERITE_BLOCK
+  - DIAMOND_BLOCK
+  - GOLD_BLOCK
+  - IRON_BLOCK
+  - EMERALD_BLOCK
+spawn:
+spawn_cooldown: 10_000
+hologram1_text: Line 1 Text
+hologram2_text: Line 2 Text

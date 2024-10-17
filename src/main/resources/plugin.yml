@@ -1,0 +1,98 @@
+name: number1
+version: '${project.version}'
+main: me.cazmik.number1.Number1
+api-version: '1.20'
+depend: [Vault]
+
+commands:
+  toggleblock:
+    usage: /toggleblock
+    description: Toggles the spawning of blocks as you walk.
+    permission: number1.toggleblock
+  togglebedrock:
+    usage: /togglebedrock
+    description: Toggles whether bedrock spawns when blocks broken.
+    permission: number1.togglebedrock
+  setspawn:
+    usage: /setspawn
+    description: Sets the spawn location to config.
+    permission: number1.setspawn
+  spawn:
+    usage: /spawn
+    description: Sends the player to the location of spawn.
+    permission: number1.spawn
+  feed:
+    usage: /feed
+    description: Sets the player to maximum hunger.
+    permission: number1.feed
+  inv:
+    usage: /inv
+    description: Views a players inventory.
+    permission: number1.inv
+  menu:
+    usage: /menu
+    description: Opens a menu GUI.
+    permission: number1.menu
+  astand:
+    usage: /astand
+    description: Creates a custom armorstand.
+    permission: number1.astand
+  hologram:
+    usage: /hologram
+    description: Creates a hologram.
+    permission: number1.hologram
+  sign:
+    usage: /sign
+    description: Creates a sign with defined line and text
+    permission: number1.sign
+  rtp:
+    usage: /rtp
+    description: Randomly teleports the player
+    permission: number1.rtp
+  vanish:
+    usage: /vanish
+    description: Vanishes the player from view
+    permission: number1.vanish
+
+permissions:
+  number1.toggleblock:
+    description: Allows you to run /toggleblock
+    default: op
+  numbeer1.togglebedrock:
+    description: Allows you to run /togglebedrock
+    default: op
+  number1.setspawn:
+    description: Allows you to run /setspawn
+    default: op
+  number1.spawn:
+    description: Allows you to run /spawn
+    default: op
+  number1.feed:
+    description: Allows you to run /feed
+    default: op
+    children:
+      number1.feed.other: true
+  number1.inv:
+    description: Allows you to run /inv
+    default: op
+  number1.menu:
+    description: Allows you to run /menu
+    default: op
+  number1.astand:
+    description: Allows you to run /astand
+    default: op
+  number1.hologram:
+    description: Allows you to run /hologram
+    default: op
+  number1.sign:
+    description: Allows you to run /sign
+    default: op
+  number1.rtp:
+    description: Allows you to run /rtp
+    default: op
+  number1.vanish:
+    description: Allows you to run /vanish
+    default: op
+  number1.silk:
+    description: Allows you to recieve spawners with silk touch enchantment.
+    default: op
